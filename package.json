@@ -1,0 +1,23 @@
+{
+  "name": "testing-books-api",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados de API utilizando Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davisonalves/testing-books-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davisonalves/testing-books-api/issues"
+  },
+  "homepage": "https://github.com/davisonalves/testing-books-api#readme",
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  }
+}
