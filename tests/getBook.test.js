@@ -2,11 +2,11 @@ const getBook = require('../requests/getBook');
 describe('GET books', () => {
     
     it('Should return status 200', () => {
-        getBook(1)
+        getBook(2)
         .expect(200)
     });
     it('Should return body contract', () => {
-        getBook(1)
+        getBook(2)
         .then(response => {
             expect(typeof response.body.firstname).toEqual('string');
             expect(typeof response.body.lastname).toEqual('string');
