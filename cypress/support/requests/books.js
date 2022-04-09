@@ -1,6 +1,6 @@
-Cypress.Commands.add('getAllBooks', () =>{ 
+Cypress.Commands.add('geetBook', (bookId) =>{ 
     cy.request({
     method: 'GET',
-    url: '/Books',
+    url: `/booking/${bookId}`,
     });
 });

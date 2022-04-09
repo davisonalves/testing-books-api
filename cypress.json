@@ -1,3 +1,4 @@
 {
-    "baseUrl": "https://fakerestapi.azurewebsites.net/api/v1"
+    "baseUrl": "https://treinamento-api.herokuapp.com",
+    "video": false
 }

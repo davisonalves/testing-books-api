@@ -1,25 +1,22 @@
-describe('Testing CRUD from api books', () => {
+describe('Testing api books', () => {
     context('GET all books', () => {
-        let schema
         let response
         before(() => {
-            cy.getAllBooks().then(res => {
+            cy.geetBook(1).then(res => {
                 response = res;
             });
-            cy.fixture('schemaGetAllBooks').then(data => {
-                schema = data;
-            });
         });
-        it('Health check', () => {
+        it('Should return status 200', () => {
             expect(response.status).to.equal(200);
         });
-        it('Contract', () => {
-            expect(response.body[0].id).to.be.a('number');
-            expect(response.body[0].title).to.be.a('string');
-            expect(response.body[0].description).to.be.a('string');
-            expect(response.body[0].pageCount).to.be.a('number')
-            expect(response.body[0].excerpt).to.be.a('string');
-            expect(response.body[0].publishDate).to.be.a('string');
+        it('Should return body contract', () => {
+            expect(response.body.firstname).to.be.a('string');
+            expect(response.body.lastname).to.be.a('string');
+            expect(response.body.totalprice).to.be.a('number');
+            expect(response.body.depositpaid).to.be.a('boolean');
+            expect(response.body.bookingdates).to.be.a('object');
+            expect(response.body.bookingdates.checkin).to.be.a('string');
+            expect(response.body.bookingdates.checkout).to.be.a('string');
         });
     });
 });
