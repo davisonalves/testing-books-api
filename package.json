@@ -4,20 +4,24 @@
   "description": "Projeto de testes automatizados de API utilizando Cypress.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davisonalves/testing-books-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Jest",
+    "Supertest"
+  ],
+  "author": "Davison Alves da Silva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/davisonalves/testing-books-api/issues"
   },
   "homepage": "https://github.com/davisonalves/testing-books-api#readme",
   "devDependencies": {
-    "cypress": "^8.2.0"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }
